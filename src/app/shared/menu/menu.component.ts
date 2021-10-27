@@ -29,7 +29,7 @@ export class MenuComponent implements OnInit {
            },
            {
             label: 'Números',
-            icon: 'pi pi-dolar',
+            icon: 'pi pi-dollar',
             routerLink: 'numeros'
           },
           {
@@ -42,6 +42,7 @@ export class MenuComponent implements OnInit {
         {
           label: 'Pipes Personalizados',
           icon: 'pi pi-cog',
+          routerLink: 'ordenar'
         }
         
   ];
