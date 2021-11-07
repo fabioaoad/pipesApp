@@ -1,75 +1,77 @@
-<div class="text-layout">
+<div class="animate__animated animate__backInRight">
+  <div class="text-layout">
     <h1>DecimalPipe y Porcentaje</h1>
     <p>
-        Pipes incluídos en Angular - Usualmente en el Common Module
+      Pipes incluídos en Angular - Usualmente en el Common Module
     </p>
-</div>
+  </div>
 
 
-<div class="grid">
+  <div class="grid">
 
     <div class="col-4">
-        <p-card header="Ventas Netas" subheader="del presente año">
-            <ul>
-                <li>
-                    <i class="pi pi-dollar"></i> {{ ventasNetas | number }}
-                </li>
-                <li>
-                    <i class="pi pi-dollar"></i> {{ ventasNetas | number:'1.2-2' }}
-                </li>
-                <li>
-                    <i class="pi pi-dollar"></i> {{ ventasNetas | number:'1.4-4' }}
-                </li>
-                <li>
-                    <i class="pi pi-dollar"></i> {{ ventasNetas | number:'1.6-6' }}
-                </li>
-                <li>
-                    <i class="pi pi-dollar"></i> {{ ( ventasNetas + 1000000 ) | number }}
-                </li>
-            </ul>
-        </p-card>
+      <p-card header="Ventas Netas" subheader="del presente año">
+        <ul>
+          <li>
+            <i class="pi pi-dollar"></i> {{ ventasNetas | number }}
+          </li>
+          <li>
+            <i class="pi pi-dollar"></i> {{ ventasNetas | number:'1.2-2' }}
+          </li>
+          <li>
+            <i class="pi pi-dollar"></i> {{ ventasNetas | number:'1.4-4' }}
+          </li>
+          <li>
+            <i class="pi pi-dollar"></i> {{ ventasNetas | number:'1.6-6' }}
+          </li>
+          <li>
+            <i class="pi pi-dollar"></i> {{ ( ventasNetas + 1000000 ) | number }}
+          </li>
+        </ul>
+      </p-card>
     </div>
 
 
 
     <div class="col-4">
-        <p-card header="Ventas Brutas" subheader="del presente año">
-            <ul>
-                <li>
-                    {{ ( ventasNetas + 2000000 ) | currency: 'Lps.' }}
-                </li>
-                <li>
-                    {{ ( ventasNetas + 2000000 ) | currency: 'CAD' }}
-                </li>
-                <li>
-                    {{ ( ventasNetas + 2000000 ) | currency: 'CAD':'symbol-narrow' }}
-                </li>
-                <li>
-                    {{ ( ventasNetas + 2000000 ) | currency: 'CAD':'symbol-narrow':'1.0-4' }}
-                </li>
-                <li>
-                    {{ ( ventasNetas + 2000000 ) | currency: 'USD.' }}
-                </li>
-                <li>
-                    {{ ( ventasNetas + 2000000 ) | currency: 'USD':'symbol-narrow' }}
-                </li>
-            </ul>
-        </p-card>
+      <p-card header="Ventas Brutas" subheader="del presente año">
+        <ul>
+          <li>
+            {{ ( ventasNetas + 2000000 ) | currency: 'Lps.' }}
+          </li>
+          <li>
+            {{ ( ventasNetas + 2000000 ) | currency: 'CAD' }}
+          </li>
+          <li>
+            {{ ( ventasNetas + 2000000 ) | currency: 'CAD':'symbol-narrow' }}
+          </li>
+          <li>
+            {{ ( ventasNetas + 2000000 ) | currency: 'CAD':'symbol-narrow':'1.0-4' }}
+          </li>
+          <li>
+            {{ ( ventasNetas + 2000000 ) | currency: 'USD.' }}
+          </li>
+          <li>
+            {{ ( ventasNetas + 2000000 ) | currency: 'USD':'symbol-narrow' }}
+          </li>
+        </ul>
+      </p-card>
     </div>
 
 
 
 
     <div class="col-4">
-        <p-card header="Ganancia porcentual" subheader="del presente año">
-            <ul>
-                <li>
-                    {{ porcentaje | percent:'2.2-2' }}
-                </li>
-            </ul>
-        </p-card>
+      <p-card header="Ganancia porcentual" subheader="del presente año">
+        <ul>
+          <li>
+            {{ porcentaje | percent:'2.2-2' }}
+          </li>
+        </ul>
+      </p-card>
     </div>
 
 
 
+  </div>
 </div>
